@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/payment-popup.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="navbar">
+          <div class="navbar-logo">
+            <div>
+              <img src="assets/img/Tickitz-navbar.svg" alt="" />
+            </div>
+            <a href="#" id="hamburger-menu">
+              <img src="assets/img/hamburger-menu.svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-nav" id="navbarNav">
+            <a href="index.html">Home</a>
+            <a href="index2.html">Movie</a>
+            <a href="detail.html">Buy Ticket</a>
+          </div>
+          <div id="navbar-button">
+            <a href="sign-in.html" type="button">SignIn</a>
+            <a href="sign-up.html" type="button">Sign Up</a>
+          </div>
+        </nav>
+      </header>
+
+      <section class="container-popup">
+        <div class="content">
+          <div class="money-transfer-order">
+            <div>
+              <div>
+                <div>✓</div>
+                <div style="color: #4e4b66">Dates And Time</div>
+              </div>
+              <div></div>
+              <div>
+                <div>✓</div>
+                <div style="color: #4e4b66">Seat</div>
+              </div>
+              <div></div>
+              <div>
+                <div>3</div>
+                <div style="color: #4e4b66">Payment</div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-info">
+            <h3>Payment Info</h3>
+            <div>
+              <div class="display-payment">
+                <div>
+                  <div class="payment-info-text-top">DATE & TIME</div>
+                  <div class="payment-info-text-bot">
+                    Tuesday, 07 July 2020 at 02:00pm
+                  </div>
+                </div>
+                <div class="border"></div>
+                <div>
+                  <div class="payment-info-text-top">MOVIE TITLE</div>
+                  <div class="payment-info-text-bot">
+                    Spider-Man: Homecoming
+                  </div>
+                </div>
+                <div class="border"></div>
+                <div>
+                  <div class="payment-info-text-top">CINEMA NAME</div>
+                  <div class="payment-info-text-bot">CineOne21 Cinema</div>
+                </div>
+                <div class="border"></div>
+                <div>
+                  <div class="payment-info-text-top">NUMBER OF TICKETS</div>
+                  <div class="payment-info-text-bot">3 pieces</div>
+                </div>
+                <div class="border"></div>
+                <div>
+                  <div class="payment-info-text-top">TOTAL PAYMENT</div>
+                  <div class="payment-info-text-bot-blue">$30,00</div>
+                </div>
+                <div class="border"></div>
+              </div>
+            </div>
+            <form>
+              <h3>Personal Information</h3>
+              <div class="display-form">
+                <div>
+                  <label for="fname" style="color: #696f79; font-weight: 700"
+                    >First name:</label
+                  >
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Input your fullname"
+                  />
+                </div>
+                <div>
+                  <label for="email" style="color: #696f79; font-weight: 700"
+                    >email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Input your email"
+                  />
+                </div>
+                <div>
+                  <label for="email" style="color: #696f79; font-weight: 700"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="phone"
+                    id="phone"
+                    name="phone"
+                    placeholder="Input your phone number"
+                  />
+                </div>
+              </div>
+              <div class="payment-method">
+                <h1>payment</h1>
+                <div>
+                  <div class="payment-btn">
+                    <input
+                      type="radio"
+                      id="google-pay"
+                      name="payment-method"
+                      class="payment-radio"
+                    />
+                    <label for="google-pay" class="payment-label">
+                      <div>
+                        <img
+                          src="assets/img/logo-google-pay.svg"
+                          alt="Google Pay"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="payment-btn">
+                    <input
+                      type="radio"
+                      id="visa"
+                      name="payment-method"
+                      class="payment-radio"
+                    />
+                    <label for="visa" class="payment-label">
+                      <div>
+                        <img src="assets/img/logo-visa.svg" alt="Google Pay" />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="payment-btn">
+                    <input
+                      type="radio"
+                      id="paypal"
+                      name="payment-method"
+                      class="payment-radio"
+                    />
+                    <label for="paypal" class="payment-label">
+                      <div>
+                        <img
+                          src="assets/img/logo-paypal.svg"
+                          alt="Google Pay"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="payment-btn">
+                    <input
+                      type="radio"
+                      id="gopay"
+                      name="payment-method"
+                      class="payment-radio"
+                    />
+                    <label for="gopay" class="payment-label">
+                      <div>
+                        <img src="assets/img/logo-Gopay.svg" alt="Google Pay" />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="payment-btn">
+                    <input
+                      type="radio"
+                      id="bcd"
+                      name="payment-method"
+                      class="payment-radio"
+                    />
+                    <label for="bcd" class="payment-label">
+                      <div>
+                        <img src="assets/img/logo-bca.svg" alt="Google Pay" />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="payment-btn">
+                    <input
+                      type="radio"
+                      id="bri"
+                      name="payment-method"
+                      class="payment-radio"
+                    />
+                    <label for="bri" class="payment-label">
+                      <div>
+                        <img src="assets/img/logo-bri.svg" alt="Google Pay" />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="payment-btn">
+                    <input
+                      type="radio"
+                      id="dana"
+                      name="payment-method"
+                      class="payment-radio"
+                    />
+                    <label for="dana" class="payment-label">
+                      <div>
+                        <img src="assets/img/Logo-dana.svg" alt="Google Pay" />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="payment-btn">
+                    <input
+                      type="radio"
+                      id="ovo"
+                      name="payment-method"
+                      class="payment-radio"
+                    />
+                    <label for="ovo" class="payment-label">
+                      <div>
+                        <img src="assets/img/logo-ovo.svg" alt="Google Pay" />
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <button type="button" class="custom-button" onclick="openPop()">
+                  continue
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="popup">
+          <div class="popup-content">
+            <div class="text-normal">Payment Info</div>
+            <div class="ticket-information">
+              <div>
+                <div class="no-rekening">
+                  <div>
+                    <div>No. Rekening Virtual :</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="num">12321328913829724</div>
+                  <button type="button">Copy</button>
+                </div>
+              </div>
+              <div class="total-payment">
+                <div>
+                  <div>Total Payment :</div>
+                </div>
+                <div>
+                  <div>$30</div>
+                </div>
+              </div>
+              <div>
+                Pay this payment bill before it is due, on
+                <span>June 23, 2023</span>. If the bill has not been paid by the
+                specified time, it will be forfeited
+              </div>
+              <a href="ticket-result.html">
+                <button type="button" class="custom-button">
+                  Check Payment
+                </button>
+              </a>
+              <button type="button">Pay Later</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer">
+          <div class="content-footer">
+            <div class="footer-part">
+              <div>
+                <img src="assets/img/Tickitz-footer.svg" alt="" />
+              </div>
+              <div class="text-footer">
+                <div>Stop waiting in line. Buy tickets</div>
+                <div>conveniently, watch movies quietly.</div>
+              </div>
+            </div>
+            <div class="footer-part">
+              <div>Explore</div>
+              <div class="text-footer">
+                <div>Cinemas</div>
+                <div>Movies List</div>
+                <div>My Ticket</div>
+                <div>Notification</div>
+              </div>
+            </div>
+            <div class="footer-img">
+              <div>Our Sponsor</div>
+              <div class="img-footer">
+                <div><img src="assets/img/Ebu.id.svg" alt="" /></div>
+                <div><img src="assets/img/CineOne212.svg" alt="" /></div>
+                <div><img src="assets/img/Hiflix2.svg" alt="" /></div>
+              </div>
+            </div>
+            <div class="footer-part">
+              <div>Follow us</div>
+              <div class="social-footer">
+                <div class="content-social-footer">
+                  <div class="logo-facebook">
+                    <img src="assets/img/Logo-Facebook.svg" alt="" />
+                  </div>
+                  <div>Tickitz Cinema id</div>
+                </div>
+                <div class="content-social-footer">
+                  <div>
+                    <img src="assets/img/Logo-Instagram.svg" alt="" />
+                  </div>
+                  <div>tickitz.id</div>
+                </div>
+                <div class="content-social-footer">
+                  <div class="logo-twitter">
+                    <img src="assets/img/Logo-Twitter.svg" alt="" />
+                  </div>
+                  <div>tickitz.id</div>
+                </div>
+                <div class="content-social-footer">
+                  <div>
+                    <img src="assets/img/Logo-Youtube.svg" alt="" />
+                  </div>
+                  <div>Tickitz Cinema id</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
