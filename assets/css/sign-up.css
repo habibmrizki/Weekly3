@@ -1,0 +1,345 @@
+:root {
+  --color1: #ffffff;
+  --color2: #1d4ed8;
+  --color3: #a0a3bd;
+  --color4: #dedede;
+  --color5: #4e4b66;
+  --colorBg: #def9c4;
+  --bg: #468585;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-image: url(/assets/img/sign-up.svg);
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  padding: 25px;
+  font-family: "Mulish", sans-serif;
+}
+
+.background-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .error {
+  color: red;
+  font-size: 14px;
+  visibility: hidden;
+} */
+
+.content {
+  background-color: var(--color1);
+  padding: 35px 75px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  border-radius: 8px;
+}
+
+.money-transfer-order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 21px;
+  justify-content: space-between;
+}
+
+.money-transfer-order > div:nth-child(1),
+.money-transfer-order > div:nth-child(3),
+.money-transfer-order > div:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.money-transfer-order > div:nth-child(2),
+.money-transfer-order > div:nth-child(4) {
+  border-top: 1px dashed var(--color3);
+  width: 85px;
+}
+
+.money-transfer-order > div:nth-child(1) > div:nth-child(1) {
+  background-color: var(--color2);
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color1);
+}
+
+.money-transfer-order > div:nth-child(3) > div:nth-child(1),
+.money-transfer-order > div:nth-child(5) > div:nth-child(1) {
+  background-color: var(--color3);
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color1);
+}
+
+.text-first {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color5);
+}
+.text-second,
+.text-third {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color3);
+}
+
+/* form */
+form .email {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form > a:nth-child(5) {
+  text-align: end;
+  color: var(--color2);
+  text-decoration: none;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  gap: 13px;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.input-password,
+.input-email {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color4);
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: var(--color1);
+}
+
+input[type="password"],
+input[type="email"] {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.custom-btn {
+  /* border: none; */
+  background: var(--color2);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 46px;
+  border-radius: 6px;
+  color: var(--color1);
+  transition: all 0.2s linear;
+}
+
+.custom-btn:hover {
+  background: var(--color1);
+  border: 1px solid var(--color2);
+  color: var(--color2);
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button img {
+  width: 20px;
+  height: 20px;
+}
+
+.content form > button:nth-child(4) a {
+  background-color: var(--bg);
+  width: 100%;
+  height: 64px;
+  color: var(--color1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+.content form > button:nth-child(4) a:hover {
+  background-color: #ddeb9d;
+  color: var(--color2);
+  border: 1px solid var(--color2);
+}
+
+.content form > div:nth-child(5) {
+  text-align: center;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button img {
+  width: 20px;
+  height: 20px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  width: auto;
+}
+
+.line {
+  flex-grow: 1;
+  border-top: 1px solid #d1d5db;
+}
+
+.text {
+  padding: 0 8px;
+  color: #e5e7eb;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.social-media > button:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  max-width: 182px;
+  padding: 20px 50px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.social-media > button:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  max-width: 182px;
+  padding: 20px 50px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .content {
+    width: 100%;
+    max-width: 450px;
+    padding: 45px;
+  }
+  .money-transfer-order {
+    display: none;
+  }
+
+  .background-img > div:nth-child(1) > img {
+    width: 190px;
+    height: 80px;
+  }
+
+  .social-media > button:nth-child(1),
+  .social-media > button:nth-child(2) {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .background-img > div:nth-child(1) > img {
+    width: 190px;
+    height: 80px;
+  }
+
+  form {
+    gap: 17px;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .social-media > button:nth-child(2) > div:nth-child(2),
+  .social-media > button:nth-child(1) > div:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
+    width: 100%;
+    height: 520px;
+    max-width: 350px;
+  }
+
+  .background-img > div:nth-child(1) > img {
+    width: 120px;
+    height: 50px;
+  }
+}
