@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="icon"
+      type="image-png"
+      sizes="32x32"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image-png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="assets/css/add-new-movie.css" />
+    <title>Add New Movie</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <div>
+            <img src="assets/img/Tickitz-navbar.svg" alt="" />
+          </div>
+          <a href="#" id="hamburger-menu">
+            <img src="assets/img/hamburger-menu.svg" alt="" />
+          </a>
+        </div>
+        <div class="navbar-nav" id="navbarNav">
+          <a href="index.html">DashBoard</a>
+          <a href="index2.html">Movie</a>
+        </div>
+        <div id="navbar-profile">
+          <div>
+            <a href="#">Location</a>
+            <div><img src="assets/img/arrow-bottom-navbar.svg" alt="" /></div>
+          </div>
+          <div><img src="assets/img/Search.svg" alt="" /></div>
+          <div>
+            <img
+              src="assets/img/WhatsApp Image 2025-03-03 at 22.10.42_3f2b1b5e.jpg"
+              alt=""
+              style="width: 56px; height: 56px; border-radius: 50%"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="content">
+        <form action="" onsubmit="return validateForm()">
+          <div class="payment-info">
+            <div>
+              <h3>Add New Movie</h3>
+              <div class="display-form">
+                <!-- Movie Name -->
+                <div>
+                  <label for="mvname">Movie Name</label>
+                  <input
+                    type="text"
+                    id="mvname"
+                    name="mvname"
+                    placeholder="Spider-Man: Homecoming"
+                  />
+                  <span id="mvname-error" class="error-message"></span>
+                </div>
+
+                <section class="box">
+                  <!-- Release Date -->
+                  <div class="release">
+                    <div>
+                      <label for="release_date">Release date</label>
+                      <input
+                        type="date"
+                        id="release_date"
+                        name="release_date"
+                        style="width: 100%"
+                      />
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="flex">
+                    <div>
+                      <label for="duration_hour"
+                        >Duration (hour / minute)</label
+                      >
+                    </div>
+                    <div>
+                      <div class="input-duration">
+                        <input
+                          type="time"
+                          id="duration_hour"
+                          name="duration_hour"
+                          placeholder="2"
+                          min="0"
+                          max="24"
+                        />
+                      </div>
+                      <div class="input-duration">
+                        <input
+                          type="time"
+                          id="duration_minute"
+                          name="duration_minute"
+                          placeholder="13"
+                          min="0"
+                          max="59"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Category -->
+                <div>
+                  <label for="category">Category</label>
+                  <input
+                    type="text"
+                    id="category"
+                    name="category"
+                    placeholder="Action, Adventure, Sci-Fi"
+                  />
+                  <span id="category-error" class="error-message"></span>
+                </div>
+
+                <!-- Director -->
+                <div>
+                  <label for="director">Director Name</label>
+                  <input
+                    type="text"
+                    id="director"
+                    name="director"
+                    placeholder="Jon Watts"
+                  />
+                  <span id="director-error" class="error-message"></span>
+                </div>
+
+                <!-- Cast -->
+                <div>
+                  <label for="cast">Cast</label>
+                  <input
+                    type="text"
+                    id="cast"
+                    name="cast"
+                    placeholder="Tom Holland, Michael Keaton, Robert Dow..Action, Adventure, Sci-Fi"
+                  />
+                  <span id="cast-error" class="error-message"></span>
+                </div>
+
+                <!-- Synopsis -->
+                <div>
+                  <label for="note">Synopsis</label>
+                  <textarea
+                    class="textarea"
+                    name="notes"
+                    id="note"
+                    rows="6"
+                    cols="100"
+                    placeholder="Thrilled by his experience with the Avengers, Peter returns home,where he lives with his Aunt May,"
+                  ></textarea>
+                  <span id="note-error" class="error-message"></span>
+                </div>
+
+                <!-- Location -->
+                <div>
+                  <label for="location">Add Location</label>
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="Purwokerto, Bandung, Bekasi"
+                  />
+                  <span id="location-error" class="error-message"></span>
+                </div>
+
+                <!-- Date & Time -->
+                <div>
+                  <div class="date-time">Set Date & Time</div>
+                  <div class="dropdown-date">
+                    <div class="icon">
+                      <img src="assets/img/date.svg" alt="Date Icon" />
+                    </div>
+                    <div class="date">Set a date</div>
+                    <div>
+                      <img src="assets/img/arrow-bottom.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Time Slots -->
+                <div>
+                  <button><img src="assets/img/plus.svg" alt="" /></button>
+                  <div class="time">08:30am</div>
+                  <div class="time">10:30pm</div>
+                </div>
+                <div class="border"></div>
+              </div>
+              <button type="submit">Save Movie</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="content-footer">
+          <div class="footer-part">
+            <div>
+              <img src="assets/img/Tickitz-footer.svg" alt="" />
+            </div>
+            <div class="text-logo">
+              <div>Stop waiting in line. Buy tickets</div>
+              <div>conveniently, watch movies quietly.</div>
+            </div>
+          </div>
+          <div class="footer-part">
+            <div>Explore</div>
+            <div class="text-footer">
+              <div>Cinemas</div>
+              <div>Movies List</div>
+              <div>My Ticket</div>
+              <div>Notification</div>
+            </div>
+          </div>
+          <div class="footer-img">
+            <div>Our Sponsor</div>
+            <div class="img-footer">
+              <div><img src="assets/img/Ebu.id.svg" alt="" /></div>
+              <div><img src="assets/img/CineOne212.svg" alt="" /></div>
+              <div><img src="assets/img/Hiflix2.svg" alt="" /></div>
+            </div>
+          </div>
+          <div class="footer-part">
+            <div>Follow us</div>
+            <div class="social-footer">
+              <div class="content-social-footer">
+                <div class="logo-facebook">
+                  <img src="assets/img/Logo-Facebook.svg" alt="" />
+                </div>
+                <div>Tickitz Cinema id</div>
+              </div>
+              <div class="content-social-footer">
+                <div>
+                  <img src="assets/img/Logo-Instagram.svg" alt="" />
+                </div>
+                <div>tickitz.id</div>
+              </div>
+              <div class="content-social-footer">
+                <div class="logo-twitter">
+                  <img src="assets/img/Logo-Twitter.svg" alt="" />
+                </div>
+                <div>tickitz.id</div>
+              </div>
+              <div class="content-social-footer">
+                <div>
+                  <img src="assets/img/Logo-Youtube.svg" alt="" />
+                </div>
+                <div>Tickitz Cinema id</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/toggleHamburgerMenuProfile.js"></script>
+  </body>
+</html>
