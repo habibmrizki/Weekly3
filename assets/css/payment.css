@@ -1,0 +1,648 @@
+:root {
+  --color1: #1d4ed8;
+  --color2: #121212;
+  --color3: #a0a3bd;
+  --color4: #4f5665;
+  --color5: #e8e8e84d;
+  --color6: #2948ff;
+  --color7: #18181b;
+  --color8: #a0a3bd;
+  --btnMovie: #ffffff;
+  --colorFooter: #000000;
+  --colorTextTop: #8692a6;
+  --colorFooterBottom: #6e7191;
+  --colorBorder: #e6e6e6;
+  --colorBorder2: #dedede;
+  --colorsuccess: #008000;
+  --bg: #468585;
+  --textNormal: #50b498;
+  --colorNavbar: #def9c4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 22px 10%;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: var(--btnMovie);
+  color: var();
+}
+/* 
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+} */
+
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid var(--color2);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar-button > a:nth-child(1):hover {
+  background-color: var(--color1);
+  color: var(--btnMovie);
+}
+
+.navbar-button > a:nth-child(2):hover {
+  background-color: var(--btnMovie);
+  color: var(--color1);
+  border: 1px solid var(--color1);
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar > div:nth-child(1) > img {
+  width: 50px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.text-navbar > span:first-child {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--bg);
+}
+
+.text-navbar > span:last-child {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bg);
+}
+.navbar-nav a {
+  color: var(--color2);
+  font-weight: 500;
+}
+.navbar-button {
+  display: flex;
+  gap: 22px;
+}
+
+.navbar-button > a:nth-child(1),
+.navbar-button > a:nth-child(2) {
+  width: 86px;
+  height: 48px;
+}
+
+.navbar-button > a:nth-child(1) {
+  background-color: var(--btnMovie);
+  color: var(--color1);
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s linear;
+}
+
+.content {
+  background-color: rgba(160, 163, 189, 0.2);
+  padding: 39px 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.money-transfer-order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 21px;
+}
+.money-transfer-order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 21px;
+  justify-content: center;
+}
+
+.money-transfer-order > div:nth-child(1) > div:nth-child(1),
+.money-transfer-order > div:nth-child(1) > div:nth-child(3),
+.money-transfer-order > div:nth-child(1) > div:nth-child(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.money-transfer-order > div:nth-child(1),
+.money-transfer-order > div:nth-child(3),
+.money-transfer-order > div:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Border garis putus */
+.money-transfer-order > div:nth-child(1) > div:nth-child(2),
+.money-transfer-order > div:nth-child(1) > div:nth-child(4) {
+  border-top: 1px dashed var(--color4);
+  width: 85px;
+}
+
+/* Warna Hijau */
+.money-transfer-order > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
+.money-transfer-order > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) {
+  background-color: #008000;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btnMovie);
+}
+
+/* Warna biru */
+.money-transfer-order > div:nth-child(1) > div:nth-child(5) > div:nth-child(1) {
+  background-color: var(--color1);
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color2);
+  color: var(--btnMovie);
+}
+
+.navbar-button > a:nth-child(2) {
+  color: var(--color1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color1);
+  color: var(--colorNavbar);
+  transition: 0.2s linear;
+}
+
+.payment-info {
+  background-color: var(--btnMovie);
+  padding: 52px 37px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.display-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Jarak antara text atas dengan text bawah */
+.display-payment > div:nth-child(1),
+.display-payment > div:nth-child(3),
+.display-payment > div:nth-child(5),
+.display-payment > div:nth-child(7),
+.display-payment > div:nth-child(9) {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.border {
+  border: 1px solid var(--color3);
+}
+
+.display-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Mengatur bagian Personal Information */
+.display-form > div:nth-child(1),
+.display-form > div:nth-child(2),
+.display-form > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.display-form > div:nth-child(3) > input {
+  padding-left: 90px;
+  border: 1px solid var(--colorBorder);
+  width: 100%;
+  height: 64px;
+  width: 100%;
+  border-radius: 3px;
+  padding-right: 42px;
+  transition: border-color 0.3s;
+}
+
+.display-form > div:nth-child(3) > input:focus,
+.display-form > div:nth-child(2) > input:focus,
+.display-form > div:nth-child(1) > input:focus {
+  outline: none;
+  border-color: var(--color1);
+  transition: 0.2s ease-in;
+}
+
+.display-form > div:nth-child(1) > input,
+.display-form > div:nth-child(2) > input {
+  border: 1px solid var(--colorBorder);
+  width: 100%;
+  height: 64px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 21px 42px;
+}
+
+.display-form > div:nth-child(3) {
+  position: relative;
+}
+
+.display-form > div:nth-child(3)::before {
+  content: "+62";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 35px;
+  font-weight: 300;
+  font-size: 18px;
+  transform: translate(20px, 50px);
+  border-right: 1px solid var(--color2);
+  line-height: 35px;
+  padding-right: 25px;
+}
+
+/* Payment Start */
+.payment-btn > input {
+  display: none;
+}
+
+.payment-method {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.payment-method > div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.payment-method > a {
+  width: 100%;
+}
+
+.payment-radio {
+  display: none;
+}
+
+.payment-label {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid var(--color8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.payment-radio:checked + .payment-label {
+  border-color: var(--color1);
+}
+
+/* Payment End */
+
+.custom-button {
+  height: 56px;
+  background-color: var(--color1);
+  color: var(--btnMovie);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.custom-button:hover {
+  background-color: var(--btnMovie);
+  color: var(--color1);
+  border: 1px solid var(--color1);
+}
+
+/* FOOTER */
+.footer {
+  padding: 100px 130px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: var(--btnMovie);
+}
+
+.content-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-part > div:nth-child(1),
+.footer-img > div:nth-child(1) {
+  color: var(--colorFooter);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.text-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--colorFooterBottom);
+}
+
+.text-footer > div {
+  color: var(--color9);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.img-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.social-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content-social-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.content-social-footer > div:nth-child(2) {
+  color: var(--colorFooterBottom);
+}
+
+.content-social-footer img {
+  width: 24px;
+}
+
+.logo-facebook img,
+.logo-twitter img {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar > div:first-child,
+.footer-part > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-logo > div,
+.footer-part > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#navbar-button > a:nth-child(1) {
+  background-color: var(--btnMovie);
+  color: var(--color1);
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s linear;
+}
+
+#navbar-button > a:nth-child(2) {
+  color: var(--btnMovie);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color1);
+  transition: 0.2s linear;
+}
+
+#navbar-button {
+  display: flex;
+  gap: 22px;
+}
+
+#navbar-button > a:nth-child(1),
+#navbar-button > a:nth-child(2) {
+  width: 86px;
+  height: 48px;
+}
+
+/* Teks di dalam popup */
+
+@media (max-width: 998px) {
+  .content {
+    padding: 39px 100px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .payment-method {
+    grid-template-columns: 1fr 1fr;
+    gap: 41px 15px;
+  }
+
+  .payment-btn button {
+    max-width: none;
+  }
+
+  .footer {
+    padding: 64px 60px;
+  }
+
+  .content-footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-part {
+    gap: 12px;
+    width: 100%;
+  }
+
+  .footer-img,
+  .img-footer {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .payment-info {
+    padding: 52px 24px;
+  }
+}
+@media (max-width: 776px) {
+  #navbar-button > a:nth-child(1),
+  #navbar-button > a:nth-child(2) {
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav.active {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  #navbar-button.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav,
+  #navbar-button {
+    display: none;
+  }
+  .money-transfer-order {
+    display: none;
+  }
+
+  .navbar-nav,
+  .navbar-button {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  .content {
+    padding: 52px 24px;
+  }
+
+  .social-footer {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .content-social-footer > div:last-child {
+    display: none;
+  }
+
+  .total-payment {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .img-footer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .img-footer > div:first-child > img,
+  .img-footer > div:nth-child(2) > img,
+  .img-footer > div:nth-child(3) > img {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .payment-btn button {
+    padding: 0;
+  }
+
+  .footer {
+    padding: 64px 40px;
+  }
+
+  .text-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 41px;
+  }
+
+  .img-footer > div:first-child > img,
+  .img-footer > div:nth-child(2) > img,
+  .img-footer > div:nth-child(3) > img {
+    width: 80px;
+    height: 30px;
+  }
+}
