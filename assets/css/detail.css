@@ -1,0 +1,480 @@
+:root {
+  --primary-color: #1d4ed8;
+  --secondary-color: rgba(29, 78, 216, 0.2);
+  --slate-color: #eaeaea;
+  --dark-color: #4e4b66;
+  --ligth-color: #fff;
+  --disabled-color: #a0a3bd;
+  --input-color: #fcfdfe;
+  --color1: #1d4ed8;
+  --color2: #121212;
+  --color3: #a0a3bd;
+  --color4: #4f5665;
+  --color5: #e8e8e84d;
+  --color6: #2948ff;
+  --color7: #18181b;
+  --color8: #a0a3bd;
+  --btnMovie: #ffffff;
+  --colorNavbar: #def9c4;
+  --colorFooter: #000000;
+  --colorFooterBottom: #6e7191;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+}
+
+/* main {
+  position: relative;
+} */
+
+.hero {
+  height: 300px;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/hero-index-3.jpg");
+  background-position: left 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.5);
+}
+/* end hero */
+
+/* profile-movie */
+
+.detail-movie {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "picture profile"
+    "picture none"
+    "synopsis synopsis";
+  column-gap: 2rem;
+}
+
+.detail-movie > img {
+  grid-area: picture;
+  width: 215px;
+  justify-self: end;
+  border-radius: 5px;
+  position: relative;
+  top: -100px;
+}
+
+.detail-movie > div:nth-child(2) {
+  grid-area: profile;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "title title"
+    "genre genre"
+    "release directed"
+    "duration casts";
+  gap: 1rem;
+}
+
+.detail-movie > div:nth-child(2) > h1 {
+  grid-area: title;
+}
+
+.detail-movie > div:nth-child(2) > .genre {
+  grid-area: genre;
+  display: flex;
+  gap: 1rem;
+}
+
+.detail-movie > div:nth-child(2) > .genre > div {
+  width: 90px;
+  height: 30px;
+  background-color: var(--slate-color);
+  color: var(--disabled-color);
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.detail-movie > div:nth-child(2) > .release {
+  grid-area: release;
+}
+
+.detail-movie > div:nth-child(2) > .directed {
+  grid-area: directed;
+}
+
+.detail-movie > div:nth-child(2) > .duration {
+  grid-area: duration;
+}
+
+.detail-movie > div:nth-child(2) > .casts {
+  grid-area: casts;
+}
+
+.detail-movie > div:nth-child(2) > div > p:nth-child(1) {
+  font-size: 0.8rem;
+  color: var(--disabled-color);
+  padding-bottom: 0.5rem;
+}
+
+.detail-movie > div:nth-child(2) > div > p:nth-child(2) {
+  font-size: 0.9rem;
+}
+
+.detail-movie > div:nth-child(3) {
+  grid-area: synopsis;
+  display: flex;
+  flex-direction: column;
+  padding: 0 4.5rem;
+  transform: translateY(-45px);
+}
+
+.detail-movie div:nth-child(3) > h1 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.detail-movie div:nth-child(3) > p {
+  color: var(--disabled-color);
+  font-size: 1.2rem;
+}
+
+.choose-date > div:first-child,
+.choose-date > div:nth-child(2),
+.choose-date > div:nth-child(3),
+.choose-date > div:last-child {
+  width: 100%;
+}
+
+.container-book-tickets {
+  padding: 0 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container-book-tickets > div:first-child {
+  color: var(--color2);
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.date .input-wrapper-date,
+.time .input-wrapper-time {
+  position: relative;
+  display: inline-block;
+}
+
+.date,
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* .input-wrapper-time::before {
+  content: "";
+  background: url(/assets/img/time.svg) no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(1000%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+} */
+
+/* .input-wrapper-date::before {
+  content: "";
+  background-image: url("../img/calendar.svg");
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(100%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+} */
+
+.input-wrapper-time input,
+.input-wrapper-date input {
+  height: 56px;
+  max-width: 284px;
+  width: 100%;
+  padding-left: 30px;
+  padding: 20px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+}
+
+.date input,
+.time input {
+  border: none;
+  width: 200px;
+  border: 2px solid cadetblue;
+  padding-left: 40px;
+  width: 100%;
+}
+
+.date input {
+  border: none;
+  width: 100%;
+  border: 2px solid cadetblue;
+  padding-left: 40px;
+}
+
+#location {
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  padding: 0 20px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  height: 56px;
+}
+
+#location:focus,
+#time:focus,
+#date:focus {
+  border-color: #2ecc71;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+  transition: 0.2s ease-in;
+}
+
+.choose-date {
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+}
+
+.choose-date > div:first-child,
+.choose-date > div:nth-child(2),
+.choose-date > div:nth-child(3) {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.btn-filter {
+  width: 100%;
+  max-width: 200px;
+  background-color: var(--color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btnMovie);
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* end profile-movie */
+
+/* book ticket */
+
+/* choose cinema */
+
+.choose-cinema > div:nth-child(1) {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 4.5rem;
+}
+
+.choose > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-submit > button > a {
+  color: var(--btnMovie);
+}
+
+.choose > div > div > label > div {
+  width: 250px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid var(--disabled-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.choose > div > div > input {
+  display: none;
+}
+
+.choose > div > div > input:checked + label > div {
+  background-color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+}
+
+.choose > div > div > label img {
+  height: 35px;
+}
+
+.choose > div > div > input:checked + label > div > img {
+  color: var(--ligth-color);
+  transition: 0.2s linear;
+}
+
+.slicer {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.slicer div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--disabled-color);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  color: var(--primary-color);
+}
+
+.slicer div.active {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--ligth-color);
+}
+
+.btn-submit button {
+  line-height: 45px;
+  margin-top: 2rem;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  color: var(--ligth-color);
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.btn-submit button:active {
+  transform: scale(0.97);
+}
+
+@media screen and (max-width: 1024px) {
+  /* profile movie */
+
+  .detail-movie {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "picture"
+      "profile"
+      "synopsis";
+    column-gap: 2rem;
+  }
+
+  .detail-movie > img {
+    justify-self: center;
+    aspect-ratio: 3 / 4;
+    width: 70%;
+    top: -150px;
+  }
+
+  .detail-movie > div:nth-child(2) {
+    justify-self: center;
+    transform: translateY(30%);
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: -130px;
+  }
+
+  .detail-movie > div:nth-child(2) > h1 {
+    text-align: center;
+  }
+
+  .detail-movie > div:nth-child(2) > .genre {
+    justify-content: center;
+  }
+
+  .content-footer {
+    padding: 0px;
+  }
+
+  .footer {
+    padding: 50px;
+  }
+
+  #synopsis {
+    transform: translateY(-75%);
+  }
+  /* end profile movie */
+
+  #book-ticket {
+    transform: translate(50px);
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .choose-date {
+    flex-direction: column;
+  }
+
+  .input-wrapper-date input,
+  .input-wrapper-time input {
+    max-width: none;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .footer {
+    padding: 40px 24px;
+  }
+
+  .detail-movie > div:nth-child(3) {
+    padding: 0 45px;
+  }
+
+  .detail-movie {
+    gap: 2rem;
+  }
+
+  .container-book-tickets {
+    padding: 0 45px;
+  }
+
+  .choose-cinema > div:nth-child(1) {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  button.btn-filter {
+    height: 56px;
+    width: 100%;
+    max-width: none;
+  }
+}
