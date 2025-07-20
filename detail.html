@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/template.css" />
+    <link rel="stylesheet" href="assets/css/detail.css" />
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="icon"
+      type="image-png"
+      sizes="32x32"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image-png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    <title>Detail</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar">
+        <div>
+          <img src="assets/img/Tickitz-navbar.svg" alt="" />
+        </div>
+        <div class="navbar-nav">
+          <a href="index.html">Home</a>
+          <a href="index2.html">Movie</a>
+          <a href="detail.html">Buy Ticket</a>
+        </div>
+        <div class="navbar-button">
+          <a href="sign-in.html" type="button">SignIn</a>
+          <a href="sign-up.html" type="button">Sign Up</a>
+        </div>
+        <div id="hamburger-menu">
+          <img src="assets/img/hamburger-menu.svg" alt="" />
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- main -->
+
+    <main>
+      <section class="hero"></section>
+      <section class="detail-movie">
+        <img src="./assets/img/Spiderman.svg" alt="thumbnail" />
+        <div>
+          <h1>Spider-Man: Homecoming</h1>
+          <div class="genre">
+            <div>Action</div>
+            <div>Adventure</div>
+          </div>
+          <div class="release">
+            <p>Release date</p>
+            <p>June 28, 2017</p>
+          </div>
+          <div class="directed">
+            <p>Directed by</p>
+            <p>Jon Watss</p>
+          </div>
+          <div class="duration">
+            <p>Duration</p>
+            <p>2 hours 13 minutes</p>
+          </div>
+          <div class="casts">
+            <p>Casts</p>
+            <p>Tom Holland, Michael Keaton, Robert Downey Jr</p>
+          </div>
+        </div>
+        <div>
+          <h1>Synopsis</h1>
+          <p>
+            Thrilled by his experience with the Avengers, Peter returns home,
+            where he lives with his Aunt May, under the watchful eye of his new
+            mentor Tony Stark, Peter tries to fall back into his normal daily
+            routine - distracted by thoughts of proving himself to be more than
+            just your friendly neighborhood Spider-Man - but when the Vulture
+            emerges as a new villain, everything that Peter holds most important
+            will be threatened.
+          </p>
+        </div>
+      </section>
+
+      <section class="container-book-tickets">
+        <div>Book Tickets</div>
+        <div>
+          <div>
+            <div class="choose-date">
+              <div>
+                <label for="date">Choose Date</label>
+                <div class="input-wrapper-date">
+                  <input type="date" id="time" />
+                </div>
+              </div>
+              <div>
+                <label for="time">Choos Time</label>
+                <div class="input-wrapper-time">
+                  <input type="time" id="time" />
+                </div>
+              </div>
+              <div>
+                <label for="location">Choose Location</label>
+                <div class="input-wrapper-location">
+                  <select name="cars" id="location">
+                    <option value="jakarta">Jakarta</option>
+                    <option value="cilacap">Cilacap</option>
+                    <option value="semarang">Semarang</option>
+                    <option value="solo">Solo</option>
+                  </select>
+                </div>
+              </div>
+              <button type="button" class="btn-filter">Filter</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="choose-cinema">
+        <div>
+          <h1>Choose Cinema</h1>
+          <p>39 Result</p>
+        </div>
+        <div class="choose">
+          <div>
+            <div>
+              <input type="radio" name="cinema" id="ebu-id" />
+              <label for="ebu-id">
+                <div>
+                  <img src="./assets/img/Ebu.id.svg" alt="logo" />
+                </div>
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="cinema" id="hiflix" />
+              <label for="hiflix">
+                <div>
+                  <img src="./assets/img/Hiflix2.svg" alt="logo" />
+                </div>
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="cinema" id="cine-one-21" />
+              <label for="cine-one-21">
+                <div>
+                  <img src="./assets/img/CineOne212.svg" alt="logo" />
+                </div>
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="cinema" id="ebu-id-2" />
+              <label for="ebu-id-2">
+                <div>
+                  <img src="./assets/img/Ebu.id.svg" alt="logo" />
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="slicer">
+            <div class="active">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+          </div>
+          <div class="btn-submit">
+            <a href="order-page.html">
+              <button type="button">Book Now</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="content-footer">
+          <div class="footer-part">
+            <div>
+              <img src="assets/img/Tickitz-footer.svg" alt="" />
+            </div>
+            <div class="text-footer">
+              <div>Stop waiting in line. Buy tickets</div>
+              <div>conveniently, watch movies quietly.</div>
+            </div>
+          </div>
+          <div class="footer-part">
+            <div>Explore</div>
+            <div class="text-footer">
+              <div>Cinemas</div>
+              <div>Movies List</div>
+              <div>My Ticket</div>
+              <div>Notification</div>
+            </div>
+          </div>
+          <div class="footer-img">
+            <div>Our Sponsor</div>
+            <div class="img-footer">
+              <div><img src="assets/img/Ebu.id.svg" alt="" /></div>
+              <div><img src="assets/img/CineOne212.svg" alt="" /></div>
+              <div><img src="assets/img/Hiflix2.svg" alt="" /></div>
+            </div>
+          </div>
+          <div class="footer-part">
+            <div>Follow us</div>
+            <div class="social-footer">
+              <div class="content-social-footer">
+                <div class="logo-facebook">
+                  <img src="assets/img/Logo-Facebook.svg" alt="" />
+                </div>
+                <div>Tickitz Cinema id</div>
+              </div>
+              <div class="content-social-footer">
+                <div>
+                  <img src="assets/img/Logo-Instagram.svg" alt="" />
+                </div>
+                <div>tickitz.id</div>
+              </div>
+              <div class="content-social-footer">
+                <div>
+                  <img src="assets/img/Logo-Twitter.svg" alt="" />
+                </div>
+                <div>tickitz.id</div>
+              </div>
+              <div class="content-social-footer">
+                <div>
+                  <img src="assets/img/Logo-Youtube.svg" alt="" />
+                </div>
+                <div>Tickitz Cinema id</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="script/script.js"></script>
+  </body>
+</html>
