@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/sign-in.css" />
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="icon"
+      type="image-png"
+      sizes="32x32"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image-png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <main>
+      <section class="background-img">
+        <div>
+          <img
+            src="assets/img/tickitz 1.png"
+            alt="Tickitz Logo"
+            style="width: 170px; height: 60px"
+          />
+        </div>
+        <div class="content">
+          <div>
+            <div>Welcome Back👋</div>
+            <div>
+              Sign in with your data that you entered during your registration
+            </div>
+          </div>
+          <form id="form">
+            <div class="email">
+              <label for="email">Email</label>
+              <div class="input-email">
+                <input type="email" id="email" placeholder="Enter Your Email" />
+              </div>
+              <span class="error" id="emailError">Email harus diisi</span>
+            </div>
+            <div class="password">
+              <label for="password">Password</label>
+              <div class="input-password">
+                <input
+                  type="password"
+                  placeholder="Enter your Password"
+                  id="password"
+                  name="password"
+                />
+                <button type="button" class="toggle-password">
+                  <img src="assets/img/logo-eye.svg" alt="Toggle Eyes" />
+                </button>
+              </div>
+              <span class="error" id="passwordError">Password harus diisi</span>
+            </div>
+            <a href="index.html">
+              <button type="button" class="custom-btn">Login</button>
+            </a>
+            <a href="#">Forgot Password?</a>
+            <div class="flex-container">
+              <div class="line"></div>
+              <span class="text">or</span>
+              <div class="line"></div>
+            </div>
+            <div class="social-media">
+              <button>
+                <img src="assets/img/google.svg" alt="Google" />
+                <div>Google</div>
+              </button>
+              <button>
+                <img src="assets/img/facebook.svg" alt="Facebook" />
+                <div>Facebook</div>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
