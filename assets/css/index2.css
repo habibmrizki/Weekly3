@@ -120,18 +120,18 @@ main {
   transform: scaleX(0.5);
 }
 
-.navbar-button {
+#navbar-button {
   display: flex;
   gap: 22px;
 }
 
-.navbar-button > a:nth-child(1),
-.navbar-button > a:nth-child(2) {
+#navbar-button > a:nth-child(1),
+#navbar-button > a:nth-child(2) {
   width: 86px;
   height: 48px;
 }
 
-.navbar-button > a:nth-child(1) {
+#navbar-button > a:nth-child(1) {
   background-color: var(--btnMovie);
   color: var(--color1);
   border: 1px solid var(--color1);
@@ -142,13 +142,13 @@ main {
   transition: 0.2s linear;
 }
 
-.navbar-button > a:nth-child(1):hover {
+#navbar-button > a:nth-child(1):hover {
   background-color: var(--color1);
   color: var(--btnMovie);
   border: 1px solid var(--color1);
 }
 
-.navbar-button > a:nth-child(2) {
+#navbar-button > a:nth-child(2) {
   color: var(--btnMovie);
   border-radius: 5px;
   display: flex;
@@ -158,7 +158,7 @@ main {
   transition: 0.2s linear;
 }
 
-.navbar-button > a:nth-child(2):hover {
+#navbar-button > a:nth-child(2):hover {
   background-color: var(--btnMovie);
   color: var(--color1);
   border: 1px solid var(--color1);
@@ -309,6 +309,38 @@ main {
   position: relative;
   overflow: hidden;
 }
+/* 
+.card .img-card {
+  position: relative;
+}
+
+.card .img-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 5px;
+  background-color: #000;
+  opacity: 0;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.card.recomended::after {
+  content: "Recomended";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  transform: translate(-15px, 10px);
+  border-radius: 20px 25px 25px 0;
+  background-color: var(--primary-color);
+  color: var(--ligth-color);
+} */
 
 .image-container img {
   width: 100%;
@@ -331,8 +363,8 @@ main {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-/* 
-.overlay::before {
+
+/* .overlay::before {
   content: "";
   position: absolute;
   top: 0;
@@ -554,7 +586,7 @@ main {
 }
 
 /* Media Queries */
-@media (max-width: 998px) {
+@media (max-width: 1024px) {
   .movie-now,
   .footer {
     padding: 20px 60px;
@@ -569,9 +601,11 @@ main {
   }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 768px) {
   .navbar {
-    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .genre {
@@ -584,7 +618,7 @@ main {
   }
 
   .navbar-nav,
-  .navbar-button {
+  #navbar-button {
     display: none;
   }
 
@@ -594,7 +628,7 @@ main {
     display: flex;
   }
 
-  .navbar-button.active {
+  #navbar-button.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -615,8 +649,15 @@ main {
     flex-direction: column;
   }
 
-  .navbar-button > a:nth-child(1),
-  .navbar-button > a:nth-child(2) {
+  #navbar-button > a:nth-child(1),
+  #navbar-button > a:nth-child(2) {
+    width: 100%;
+  }
+  .navbar > div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -627,6 +668,10 @@ main {
 
   .bg-home {
     padding: 160px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .bg-home > div:last-child {
