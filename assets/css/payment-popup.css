@@ -621,7 +621,7 @@ body {
   border: 1px solid var(--color1);
 }
 
-.ticket-information > button:nth-child(5) {
+.ticket-information > a {
   width: 100%;
   background-color: #fff;
   border: 1px solid var(--color1);
@@ -631,7 +631,19 @@ body {
   cursor: pointer;
 }
 
-.ticket-information > button:nth-child(5):hover {
+.ticket-information > a:last-child {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid var(--color1);
+  color: var(--color1);
+  height: 48px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket-information > a:hover {
   background-color: var(--color1);
   transition: background-color 0.3s ease;
   color: #fff;
@@ -686,7 +698,7 @@ body {
     padding: 52px 24px;
   }
 }
-@media (max-width: 776px) {
+@media (max-width: 768px) {
   #navbar-button > a:nth-child(1),
   #navbar-button > a:nth-child(2) {
     width: 100%;
