@@ -164,6 +164,12 @@ body {
   width: 100%;
 }
 
+.choose-date > div:last-child {
+  height: 56px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .container-book-tickets {
   padding: 0 4.5rem;
   display: flex;
@@ -219,7 +225,7 @@ body {
 .input-wrapper-time input,
 .input-wrapper-date input {
   height: 56px;
-  max-width: 284px;
+  /* max-width: 284px; */
   width: 100%;
   padding-left: 30px;
   padding: 20px;
