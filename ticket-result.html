@@ -173,30 +173,30 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <script>
-      const download_button = document.getElementById("donwload_btn"); // Corrected ID
-      const contentToPrint = document.getElementById("ticket-content"); // New variable for the element to print
+    <script src="assets/js/toggleHamburgeMenu.js">
+      // const download_button = document.getElementById("donwload_btn"); // Corrected ID
+      // const contentToPrint = document.getElementById("ticket-content"); // New variable for the element to print
 
-      download_button.addEventListener("click", async function () {
-        const filename = "ticket.pdf";
+      // download_button.addEventListener("click", async function () {
+      //   const filename = "ticket.pdf";
 
-        try {
-          const opt = {
-            margin: 1,
-            filename: filename,
-            image: { type: "jpeg", quality: 0.98 },
-            html2canvas: { scale: 2 },
-            jsPDF: {
-              unit: "in",
-              format: "letter",
-              orientation: "portrait",
-            },
-          };
-          await html2pdf().set(opt).from(contentToPrint).save(); // Use the correct variable
-        } catch (error) {
-          console.error("Error:", error.message);
-        }
-      });
+      //   try {
+      //     const opt = {
+      //       margin: 1,
+      //       filename: filename,
+      //       image: { type: "jpeg", quality: 0.98 },
+      //       html2canvas: { scale: 2 },
+      //       jsPDF: {
+      //         unit: "in",
+      //         format: "letter",
+      //         orientation: "portrait",
+      //       },
+      //     };
+      //     await html2pdf().set(opt).from(contentToPrint).save(); // Use the correct variable
+      //   } catch (error) {
+      //     console.error("Error:", error.message);
+      //   }
+      // });
     </script>
   </body>
 </html>
