@@ -92,20 +92,18 @@ body {
   transform: scaleX(0.5);
 }
 
-#navbar-button {
+.auth-buttons {
   display: flex;
   gap: 22px;
 }
 
-#navbar-button > a:nth-child(1),
-#navbar-button > a:nth-child(2),
-#navbar-button > a:nth-child(3) {
+.auth-buttons > a:nth-child(1),
+.auth-buttons > a:nth-child(2) {
   width: 86px;
   height: 48px;
 }
 
-#navbar-button > a:nth-child(1),
-#navbar-button > a:nth-child(3) {
+.auth-buttons > a:nth-child(1) {
   background-color: var(--btnMovie);
   color: var(--color1);
   border: 1px solid var(--color1);
@@ -116,14 +114,13 @@ body {
   transition: 0.2s linear;
 }
 
-#navbar-button > a:nth-child(1):hover,
-#navbar-button > a:nth-child(3):hover {
+.auth-buttons > a:nth-child(1):hover {
   background-color: var(--color1);
   color: var(--btnMovie);
   border: 1px solid var(--color1);
 }
 
-#navbar-button > a:nth-child(2) {
+.auth-buttons > a:nth-child(2) {
   color: var(--btnMovie);
   border-radius: 5px;
   display: flex;
@@ -133,7 +130,7 @@ body {
   transition: 0.2s linear;
 }
 
-#navbar-button > a:nth-child(2):hover {
+.auth-buttons > a:nth-child(2):hover {
   background-color: var(--btnMovie);
   color: var(--color1);
   border: 1px solid var(--color1);
@@ -141,6 +138,71 @@ body {
 
 #hamburger-menu {
   display: none;
+}
+
+/* Dropdown akun */
+#navbar-button .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dropbtn img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.dropbtn span {
+  font-weight: 500;
+  color: #333;
+}
+
+.arrow {
+  border: solid #555;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  margin-left: 4px;
+}
+
+/* Isi dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Tampilkan dropdown saat hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 main {
@@ -754,8 +816,7 @@ form {
   }
 
   #navbar-button > a:nth-child(1),
-  #navbar-button > a:nth-child(2),
-  #navbar-button > a:nth-child(3) {
+  #navbar-button > a:nth-child(2) {
     width: 100%;
   }
 
