@@ -107,18 +107,18 @@ body {
   transform: scaleX(0.5);
 }
 
-.navbar-button {
+#navbar-button {
   display: flex;
   gap: 22px;
 }
 
-.navbar-button > a:nth-child(1),
-.navbar-button > a:nth-child(2) {
+#navbar-button > a:nth-child(1),
+#navbar-button > a:nth-child(2) {
   width: 86px;
   height: 48px;
 }
 
-.navbar-button > a:nth-child(1) {
+#navbar-button > a:nth-child(1) {
   background-color: var(--btnMovie);
   color: var(--color1);
   border: 1px solid var(--color1);
@@ -129,13 +129,13 @@ body {
   transition: 0.2s linear;
 }
 
-.navbar-button > a:nth-child(1):hover {
+#navbar-button > a:nth-child(1):hover {
   background-color: var(--color1);
   color: var(--btnMovie);
   border: 1px solid var(--color1);
 }
 
-.navbar-button > a:nth-child(2) {
+#navbar-button > a:nth-child(2) {
   color: var(--btnMovie);
   border-radius: 5px;
   display: flex;
@@ -145,7 +145,7 @@ body {
   transition: 0.2s linear;
 }
 
-.navbar-button > a:nth-child(2):hover {
+#navbar-button > a:nth-child(2):hover {
   background-color: var(--btnMovie);
   color: var(--color1);
   border: 1px solid var(--color1);
@@ -247,7 +247,7 @@ body {
   height: 24px;
 }
 
-@media (max-width: 998px) {
+@media (max-width: 1024px) {
   .img-footer {
     display: flex;
     flex-direction: row;
@@ -265,7 +265,7 @@ body {
   }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 768px) {
   .footer {
     padding: 64px 24px;
   }
@@ -283,8 +283,56 @@ body {
     display: inline-block;
   }
   .navbar-nav,
-  .navbar-button {
+  #navbar-button {
     display: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar > div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #navbar-button > a:nth-child(1),
+  #navbar-button > a:nth-child(2) {
+    width: 100%;
+  }
+
+  .navbar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav,
+  #navbar-button {
+    display: none;
+  }
+
+  .navbar-nav.active {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  #navbar-button.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
   }
 }
 

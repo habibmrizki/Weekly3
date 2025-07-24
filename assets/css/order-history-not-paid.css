@@ -92,19 +92,19 @@ body {
   transform: scaleX(0.5);
 }
 
-.navbar-profile {
+#navbar-button {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 12px;
 }
 
-.navbar-profile > div:first-child a {
+#navbar-button > div:first-child a {
   color: var(--color2);
   font-size: 16px;
   font-weight: 500;
 }
-.navbar-profile > div:first-child {
+#navbar-button > div:first-child {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -713,7 +713,7 @@ body {
   }
 
   .navbar-link,
-  .navbar-profile {
+  #navbar-button {
     display: none;
   }
 

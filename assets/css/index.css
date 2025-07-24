@@ -92,18 +92,20 @@ body {
   transform: scaleX(0.5);
 }
 
-.navbar-button {
+#navbar-button {
   display: flex;
   gap: 22px;
 }
 
-.navbar-button > a:nth-child(1),
-.navbar-button > a:nth-child(2) {
+#navbar-button > a:nth-child(1),
+#navbar-button > a:nth-child(2),
+#navbar-button > a:nth-child(3) {
   width: 86px;
   height: 48px;
 }
 
-.navbar-button > a:nth-child(1) {
+#navbar-button > a:nth-child(1),
+#navbar-button > a:nth-child(3) {
   background-color: var(--btnMovie);
   color: var(--color1);
   border: 1px solid var(--color1);
@@ -114,13 +116,14 @@ body {
   transition: 0.2s linear;
 }
 
-.navbar-button > a:nth-child(1):hover {
+#navbar-button > a:nth-child(1):hover,
+#navbar-button > a:nth-child(3):hover {
   background-color: var(--color1);
   color: var(--btnMovie);
   border: 1px solid var(--color1);
 }
 
-.navbar-button > a:nth-child(2) {
+#navbar-button > a:nth-child(2) {
   color: var(--btnMovie);
   border-radius: 5px;
   display: flex;
@@ -130,7 +133,7 @@ body {
   transition: 0.2s linear;
 }
 
-.navbar-button > a:nth-child(2):hover {
+#navbar-button > a:nth-child(2):hover {
   background-color: var(--btnMovie);
   color: var(--color1);
   border: 1px solid var(--color1);
@@ -709,6 +712,7 @@ form {
   .navbar {
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
 
   .navbar-logo {
@@ -719,7 +723,7 @@ form {
   }
 
   .navbar-nav,
-  .navbar-button {
+  #navbar-button {
     display: none;
   }
 
@@ -729,7 +733,7 @@ form {
     display: flex;
   }
 
-  .navbar-button.active {
+  #navbar-button.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -741,8 +745,17 @@ form {
     display: inline-block;
   }
 
-  .navbar-button > a:nth-child(1),
-  .navbar-button > a:nth-child(2) {
+  .navbar > div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #navbar-button > a:nth-child(1),
+  #navbar-button > a:nth-child(2),
+  #navbar-button > a:nth-child(3) {
     width: 100%;
   }
 

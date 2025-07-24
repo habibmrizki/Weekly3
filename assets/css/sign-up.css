@@ -8,12 +8,38 @@
   --bg: #468585;
 }
 
+::-ms-reveal,
+::-ms-clear {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
   border: none;
   outline: none;
   box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.input-email.invalid .error,
+.input-password.invalid .error {
+  display: block;
+}
+
+.input-password.invalid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invalid {
+  display: flex;
+  justify-content: flex-end;
 }
 
 body {
@@ -140,6 +166,13 @@ label {
   display: flex;
   flex-direction: column;
   gap: 13px;
+}
+
+.password.invalid {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  justify-content: space-between;
 }
 
 .input-password,

@@ -1,0 +1,784 @@
+:root {
+  --color1: #1d4ed8;
+  --color2: #121212;
+  --color3: #a0a3bd;
+  --color4: #4f5665;
+  --color5: #e8e8e84d;
+  --color6: #2948ff;
+  --color7: #18181b;
+  --color8: #a0a3bd;
+  --btnMovie: #ffffff;
+  --colorFooter: #000000;
+  --colorTextTop: #8692a6;
+  --colorFooterBottom: #6e7191;
+  --colorBorder: #e6e6e6;
+  --colorBorder2: #dedede;
+  --colorsuccess: #008000;
+  --bg: #468585;
+  --textNormal: #50b498;
+  --colorNavbar: #def9c4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.content {
+  background-color: var(--bg);
+  padding: 39px 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 22px 10%;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: var(--colorNavbar);
+  color: var(); /* Ini kosong, mungkin perlu diisi atau dihapus */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.navbar-nav a {
+  color: var(--bg);
+}
+
+.navbar-button {
+  display: flex;
+  gap: 22px;
+}
+
+.navbar-button > a:nth-child(1),
+.navbar-button > a:nth-child(2) {
+  width: 86px;
+  height: 48px;
+}
+
+.navbar > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar > div:nth-child(1) > img,
+.footer-part > div:first-child img {
+  width: 50px;
+}
+
+.navbar-button > a:nth-child(1) {
+  background-color: var(--colorNavbar);
+  color: var(--bg);
+  border: 1px solid var(--bg);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-button > a:nth-child(2) {
+  color: var(--colorNavbar);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+}
+
+.payment-info {
+  background-color: var(--colorNavbar);
+  padding: 52px 37px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.money-transfer-order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 21px;
+}
+.money-transfer-order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 21px;
+  justify-content: center;
+}
+
+.money-transfer-order > div:nth-child(1) > div:nth-child(1),
+.money-transfer-order > div:nth-child(1) > div:nth-child(3),
+.money-transfer-order > div:nth-child(1) > div:nth-child(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.money-transfer-order > div:nth-child(1),
+.money-transfer-order > div:nth-child(3),
+.money-transfer-order > div:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Border garis putus */
+.money-transfer-order > div:nth-child(1) > div:nth-child(2),
+.money-transfer-order > div:nth-child(1) > div:nth-child(4) {
+  border-top: 1px dashed var(--color4);
+  width: 85px;
+}
+
+/* Warna Hijau */
+.money-transfer-order > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
+.money-transfer-order > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) {
+  background-color: #008000;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btnMovie);
+}
+
+/* Warna biru */
+.money-transfer-order > div:nth-child(1) > div:nth-child(5) > div:nth-child(1) {
+  background-color: var(--color1);
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color2);
+  color: var(--btnMovie);
+}
+
+.navbar > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-part > div:nth-child(1),
+.footer-img > div:nth-child(1) {
+  color: var(--bg);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.text-navbar > span:first-child {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--bg);
+}
+
+.text-navbar > span:last-child {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bg);
+}
+
+.display-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Jarak antara text atas dengan text bawah */
+.display-payment > div:nth-child(1),
+.display-payment > div:nth-child(3),
+.display-payment > div:nth-child(5),
+.display-payment > div:nth-child(7),
+.display-payment > div:nth-child(9) {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.border {
+  border: 1px solid var(--colorBorder);
+}
+
+.display-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Mengatur bagian Personal Information */
+.display-form > div:nth-child(1),
+.display-form > div:nth-child(2),
+.display-form > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.display-form > div:nth-child(1) > input,
+.display-form > div:nth-child(2) > input,
+.display-form > div:nth-child(3) > input {
+  border: 1px solid var(--colorBorder);
+  width: 100%;
+  height: 64px;
+  padding: 21px 42px;
+  border-radius: 3px;
+}
+
+/* Button payment method */
+.payment-method {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.payment-btn button {
+  background: none;
+  border: 1px solid var(--colorBorder2);
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.payment-info h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.payment-info > button {
+  height: 56px;
+  background-color: var(--color1);
+  color: var(--btnMovie);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.payment-info-text-top {
+  color: var(--colorTextTop);
+  font-size: 16px;
+  font-weight: 400; /* Perbaikan typo dari 'font-size' menjadi 'font-weight' */
+}
+
+.payment-info-text-bot-blue {
+  color: var(--color1);
+  font-size: 16px;
+  font-weight: 700; /* Perbaikan typo dari 'font-size' menjadi 'font-weight' */
+}
+
+.ticket-information {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ticket-information > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  justify-content: space-between;
+}
+
+.btn button {
+  width: 100%;
+  max-width: 191px;
+  background-color: var(--color1);
+  color: var(--btnMovie);
+  height: 48px;
+  border-radius: 6px;
+}
+
+.no-rekening,
+.total-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.no-rekening > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.no-rekening > div:nth-child(2) > button {
+  color: var(--color6);
+  border: 1px solid var(--color6);
+  background-color: var(--btnMovie);
+  width: 72px;
+  height: 42px;
+  border-radius: 6px;
+}
+
+.ticket-information > div:nth-child(3) > span {
+  color: #d00707;
+}
+
+/* FOOTER */
+.footer {
+  padding: 100px 130px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: var(--colorNavbar);
+}
+
+.content-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.navbar > div:first-child,
+.footer-part > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-button > a:nth-child(2) {
+  color: var(
+    --color1
+  ); /* Ini mungkin tidak sesuai dengan niat Anda, sebelumnya --colorNavbar */
+  border-radius: 5px;
+  color: var(
+    --color2
+  ); /* Ini mungkin tidak sesuai dengan niat Anda, sebelumnya --colorNavbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  color: var(
+    --colorNavbar
+  ); /* Ini yang terakhir akan diterapkan untuk warna teks */
+}
+
+.text-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--colorFooterBottom);
+}
+
+.text-footer > div {
+  color: var(--color9); /* --color9 belum didefinisikan */
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.img-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.social-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content-social-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.content-social-footer > div:nth-child(2) {
+  color: var(--colorFooterBottom);
+}
+
+.content-social-footer img {
+  width: 24px;
+}
+
+.logo-facebook img,
+.logo-twitter img {
+  width: 24px;
+  height: 24px;
+}
+
+.ticket-information > div:nth-child(3) {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+.custom-button {
+  width: 191px;
+  height: 56px;
+  background-color: var(--bg);
+  color: var(--colorNavbar);
+  border: 2px solid var(--bg);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.custom-button:hover {
+  background-color: var(--colorNavbar);
+  color: var(--bg);
+  border: 2px solid var(--bg);
+}
+
+/* --- REVISI DAN PENAMBAHAN UNTUK POPUP DIMULAI DI SINI --- */
+
+/* The main popup container - overlays the entire screen */
+.popup {
+  position: fixed; /* Fixed ke viewport, agar tetap di layar saat discroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay hitam semi-transparan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Pastikan popup di atas konten lain */
+
+  /* Initial state: Hidden by default with smooth transitions */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* State when the popup is active (shown) */
+.popup.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* The content area within the popup */
+.popup-content {
+  background-color: var(--colorNavbar);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 590px;
+  width: 90%; /* Responsif, ambil 90% lebar hingga max-width */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  /* Initial Animation State: Slightly offset and transparent */
+  transform: translateY(-20px); /* Mulai 20px di atas posisi akhir */
+  opacity: 0; /* Mulai transparan */
+
+  /* Animation: Smooth transition for the content itself */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animation state for the popup content when the popup is active */
+.popup.active .popup-content {
+  transform: translateY(0); /* Meluncur ke posisi akhir */
+  opacity: 1; /* Muncul sepenuhnya */
+}
+
+/* Gaya untuk tombol di dalam popup */
+/* Ada duplikasi gaya tombol di sini dan di .ticket-information > button,
+   pertimbangkan untuk menggabungkannya jika maksudnya sama. */
+.popup-content > button {
+  background-color: var(--colorNavbar);
+  color: var(--color1);
+  border: 1px solid var(--color1);
+  border-radius: 6px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+/* Gaya khusus untuk tombol 'Confirm' di popup jika itu adalah child ke-6 */
+.popup-content > button:nth-child(6) {
+  background-color: var(--color6);
+  color: var(--colorNavbar);
+  border: 1px solid var(--colorNavbar);
+}
+
+/* Efek hover untuk tombol popup */
+.popup-content > button:hover {
+  background-color: var(--color1);
+  color: var(--colorNavbar);
+}
+
+/* --- Styles untuk elemen di dalam popup-content (menjaga gaya asli Anda) --- */
+
+/* Teks normal di dalam popup */
+.text-normal {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color4);
+  text-align: center;
+}
+
+/* Bagian informasi tiket di dalam popup */
+/* Perhatikan ada dua definisi .ticket-information di CSS Anda.
+   Ini adalah yang kedua, pastikan Anda menggunakan yang sesuai. */
+.ticket-information {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Layout untuk elemen pertama di ticket-information (kemungkinan No Rekening) */
+.ticket-information > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Layout untuk nilai No Rekening dan tombol Copy */
+.ticket-information > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Gaya untuk tombol "Copy" di popup */
+.ticket-information > div:nth-child(1) > div:nth-child(2) > button {
+  width: 72px;
+  height: 40px;
+  border: 2px solid var(--bg);
+  color: var(--bg);
+  background: none;
+  border-radius: 6px;
+}
+
+/* Gaya untuk label "Total Payment" di popup */
+.total-payment > div:nth-child(1) {
+  color: var(--color1);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Gaya tombol umum di dalam ticket-information (contoh: "Confirm" atau "OK") */
+.ticket-information > button {
+  width: 100%;
+  background-color: var(--color1);
+  color: var(--btnMovie);
+  height: 48px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Gaya khusus untuk tombol kedua di ticket-information (contoh: "Cancel") */
+.ticket-information > button:nth-child(5) {
+  width: 100%;
+  background-color: var(--colorNavbar);
+  color: var(--color1);
+  height: 48px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Catatan: Ada duplikasi di sini. Cek apakah ini benar-benar diperlukan
+   atau bisa digabungkan dengan .ticket-information > div:nth-child(1) */
+.no-rekening > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Catatan: Ada duplikasi di sini. Cek apakah ini benar-benar diperlukan
+   atau bisa digabungkan dengan .ticket-information > div:nth-child(1) > div:nth-child(2) > button */
+.no-rekening > div:nth-child(2) > button {
+  color: var(--color6);
+  border: 1px solid var(--color6);
+  background-color: var(--btnMovie);
+  width: 72px;
+  height: 42px;
+  border-radius: 6px;
+}
+
+/* MEDIA QUERIES (dari kode asli Anda) */
+@media (max-width: 998px) {
+  .content {
+    padding: 39px 100px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .payment-method {
+    grid-template-columns: 1fr 1fr;
+    gap: 41px 15px;
+  }
+
+  .payment-btn button {
+    max-width: none;
+  }
+
+  .footer {
+    padding: 64px 60px;
+  }
+
+  .content-footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-part {
+    gap: 12px;
+    width: 100%;
+  }
+
+  .footer-img,
+  .img-footer {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .payment-info {
+    padding: 52px 24px;
+  }
+
+  /* Penyesuaian popup untuk layar menengah */
+  .popup-content {
+    padding: 15px; /* Sedikit lebih kecil untuk responsivitas */
+  }
+}
+
+@media (max-width: 776px) {
+  .money-transfer-order {
+    display: none;
+  }
+
+  .navbar-nav,
+  .navbar-button {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  .content {
+    padding: 52px 24px;
+  }
+
+  .total-payment {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .social-footer {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .content-social-footer > div:last-child {
+    display: none;
+  }
+
+  .img-footer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .img-footer > div:first-child > img,
+  .img-footer > div:nth-child(2) > img,
+  .img-footer > div:nth-child(3) > img {
+    width: 100px;
+    height: 30px;
+  }
+
+  .ticket-information > div:nth-child(1),
+  .ticket-information > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  /* Penyesuaian popup untuk layar kecil */
+  .popup {
+    /* Popup container tetap fixed */
+  }
+  .popup-content {
+    padding: 24px; /* Atur padding sesuai kebutuhan */
+  }
+}
+
+@media (max-width: 450px) {
+  .payment-btn button {
+    padding: 0;
+  }
+  .popup-content {
+    height: auto; /* Biarkan tinggi menyesuaikan konten */
+    padding: 20px; /* Penyesuaian padding lebih lanjut */
+  }
+
+  .footer {
+    padding: 64px 40px;
+  }
+
+  .text-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 41px;
+  }
+
+  .img-footer > div:first-child > img,
+  .img-footer > div:nth-child(2) > img,
+  .img-footer > div:nth-child(3) > img {
+    width: 80px;
+    height: 30px;
+  }
+}

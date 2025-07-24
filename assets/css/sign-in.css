@@ -23,6 +23,17 @@
   text-decoration: none;
 }
 
+.error {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.email.invalid .error,
+.password.invalid .error {
+  display: block;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   background-image: url(/assets/img/sign-up.svg);
@@ -143,11 +154,11 @@ form .email {
   gap: 12px;
 }
 
-.error {
+/* .error {
   color: red;
   font-size: 14px;
   visibility: hidden;
-}
+} */
 
 form {
   display: flex;

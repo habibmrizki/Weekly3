@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="assets/css/template.css" /> -->
+    <link rel="stylesheet" href="assets/css/template.css" />
     <!-- My Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +24,8 @@
       sizes="16x16"
       href="assets/img/favicon-16x16.png"
     />
-    <link rel="stylesheet" href="assets/css/payment.css" />
     <link rel="stylesheet" href="assets/css/profile-page.css" />
+    <link rel="stylesheet" href="assets/css/template.css" />
     <title>Profile page</title>
   </head>
   <body>
@@ -36,18 +36,16 @@
             <div>
               <img src="assets/img/Tickitz-navbar.svg" alt="" />
             </div>
-            <div>
-              <a href="#" id="hamburger-menu">
-                <img src="assets/img/hamburger-menu.svg" alt="" />
-              </a>
-            </div>
+            <a href="#" id="hamburger-menu">
+              <img src="assets/img/hamburger-menu.svg" alt="" />
+            </a>
           </div>
-          <div class="navbar-link">
+          <div class="navbar-nav" id="navbarLink">
             <a href="index.html">Home</a>
             <a href="index2.html">Movie</a>
             <a href="detail.html">Buy Ticket</a>
           </div>
-          <div class="navbar-profile">
+          <div id="navbar-button">
             <div>
               <select name="" id="">
                 <option value="">Jakarta</option>
@@ -264,5 +262,6 @@
         </div>
       </footer>
     </main>
+    <script src="assets/js/toggleHamburgerProfile.js"></script>
   </body>
 </html>
