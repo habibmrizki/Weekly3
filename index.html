@@ -43,9 +43,25 @@
           <a href="details.html">Buy Ticket</a>
         </div>
         <div id="navbar-button">
-          <a href="sign-in.html" type="button">SignIn</a>
-          <a href="sign-up.html" type="button">Sign Up</a>
-          <a href="sign-up.html" type="button">Log out</a>
+          <div class="auth-buttons">
+            <a href="sign-in.html" type="button">Sign In</a>
+            <a href="sign-up.html" type="button">Sign Up</a>
+          </div>
+          <div class="dropdown user-profile" style="display: none">
+            <button class="dropbtn">
+              <img
+                src="assets/img/navbar-profile.svg"
+                alt="Avatar"
+                id="userAvatar"
+              />
+              <!-- <span id="userName">Guest</span> -->
+              <i class="arrow"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="profile.html">Profile</a>
+              <a href="#" onclick="logout()">Logout</a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
